@@ -10,6 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <!-- Akhir Bootstrap CSS -->
 
+    <!-- CSS Scroll AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Akhir Scroll AOS -->
+
     <!-- CSS Manual-->
     <link rel="stylesheet" href="style.css" />
     <!-- Akhir CSS Manual -->
@@ -17,6 +21,8 @@
     <title>TEGUH PRADIPTA | Official Website</title>
     <link rel="icon" href="img/Title Icon.png" type="image/icon type">
   </head>
+
+  <!-- BODY HTML -->
   <body>
     <!-- Navbar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark shadow" style="background-color: #30cc01;">
@@ -31,10 +37,10 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="">Student Zone</a>
+              <a class="nav-link disabled" href="">Student Zone (Work in Progress)</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="https://drive.google.com/drive/folders/1me7mRc8ixrE4I_31I-Oo6JPzUjqM9Bfg?usp=sharing">Materi IPAS</a>
+              <a class="nav-link active" href="https://drive.google.com/drive/folders/1me7mRc8ixrE4I_31I-Oo6JPzUjqM9Bfg?usp=sharing" target="_blank">Materi IPAS</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#contact">Contact Me</a>
@@ -45,10 +51,48 @@
     </nav>
     <!-- Akhir Navbar -->
     
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/Carousel/slide 1.webp" class="d-block w-100" alt="Science 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>PROJECT IPAS</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Carousel/Slide 3.jpg" class="d-block w-100" alt="Science 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>PROJECT IPAS</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/Carousel/Slide 5.jpg" class="d-block w-100" alt="Science 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>PROJECT IPAS</h3>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Akhir Carousel -->
+
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/Teguh.jpg" alt="Profile Picture" height="300" class="rounded">
-      <h1 class="display-4">Teguh Pradipta</h1>
+      <img src="img/Teguh.jpg" alt="Profile Picture" height="300" class="rounded" data-aos="zoom-in-down" data-aos-duration="2200">
+      <h1 class="display-4" data-aos="flip-right">TEGUH PRADIPTA</h1>
       <p class="lead">Sains Teacher | Tech Enthusiast</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,0L48,42.7C96,85,192,171,288,186.7C384,203,480,149,576,149.3C672,149,768,203,864,192C960,181,1056,107,1152,90.7C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
@@ -58,16 +102,16 @@
     <section id="about">
       <div class="container">
         <div class="row text-center mb-3">
-          <div class="col-md">
+          <div class="col-md" data-aos-offset="150" data-aos="fade-down" data-aos-delay="100" data-aos-duration="3000">
             <h2>ABOUT ME</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-md">
+          <div class="col-md" data-aos="fade-right" data-aos-delay="200" data-aos-duration="3500">
             <h4 class="text-center">Pendidikan</h4>
             <p>Lulusan program studi S1 Pendidikan Biologi dari Universitas Negeri Surabaya (UNESA) pada tahun 2017 dengan gelar Sarjana Pendidikan (S.Pd).</p>
           </div>
-          <div class="col">
+          <div class="col" data-aos="fade-left" data-aos-delay="200" data-aos-duration="3500">
             <h4 class="text-center">Hobi</h4>
             <p>Saat ini mempunyai hobi dibidang IT seperti web design pemula dan bermain game PC. Selain itu juga suka dalam mengikuti perkembangan teknologi terutama teknologi yang berhubungan dengan PC atau Personal Computer.</p>
           </div>
@@ -79,7 +123,7 @@
 
     <!-- Kartu Pengalaman Kerja -->
     <section id="cv">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-delay="200">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>JOB EXPERIENCE</h2>
@@ -119,9 +163,22 @@
     </section>
     <!-- Akhir Kartu Pengalaman Kerja -->
 
+    <!-- Galeri IPAS -->
+    <section id="galeri">
+      <div class="container" data-aos="fade-down" data-aos-delay="200">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>GALERY</h2>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Galeri IPAS -->
+
     <!-- Kontak -->
     <section id="contact">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-delay="200">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>CONTACT ME</h2>
@@ -175,6 +232,9 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxg6NWtWNRZTzG0owlTyHis3m6X4PolQpj-7tRHqs8Sa56GgK_sLciaweoOQYAni0Ji/exec'
       const form = document.forms['contact-me-web'];
@@ -203,4 +263,5 @@
       })
     </script>
   </body>
+  <!-- AKHIR BODY HTML -->
 </html>
